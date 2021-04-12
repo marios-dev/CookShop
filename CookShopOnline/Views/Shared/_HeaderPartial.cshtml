@@ -1,0 +1,77 @@
+﻿
+<header>
+    <div class="header-area ">
+        <div id="sticky-header" class="main-header-area " style="padding-top:50px; padding-bottom:50px">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-2">
+                        <div class="logo">
+                            <a href="https://localhost:44303/">
+                                <img src=@Url.Content("/Content/img/logo.png") alt="" title="Home" style="padding-left:30px; width:auto; height:70px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="main-menu   d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+
+                                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+
+                                    @if (User.IsInRole("Administrator"))
+                                    {
+                                        <li>@Html.ActionLink("Live Chat", "Chat", "Chat")</li>
+                                        <li>
+                                            <a href="#">Administration <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li>@Html.ActionLink("Customers", "Index", "Customers")</li>
+                                                <li>@Html.ActionLink("Products", "Index", "Products")</li>
+                                                <li>@Html.ActionLink("Recipes", "Index", "Recipes")</li>
+                                                <li>@Html.ActionLink("Statistics", "DashBoard", "DashBoard")</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">My Profile <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li>@Html.Partial("_LoginPartial")</li>
+                                            </ul>
+                                        </li>
+                                    }
+                                    else if (User.IsInRole("User") || User.IsInRole("Premium"))
+                                    {
+                                        <li>@Html.ActionLink("Products", "Index", "Products")</li>
+                                        <li>@Html.ActionLink("Recipes", "Index", "Recipes")</li>
+                                        <li class="fa fa-shopping-cart" style="font-size:x-large;">@{Html.RenderAction("CartSummary", "ShoppingCart");}</li>
+                                        <li>@Html.ActionLink("Live Chat", "Chat", "Chat")</li>
+                                        <li>
+                                            <a href="#">My Profile <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li>@Html.ActionLink("Show Profile ", "ShowCustomerProfile", "Customers")</li>
+                                                <li>@Html.Partial("_LoginPartial")</li>
+                                            </ul>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>@Html.ActionLink("Products", "Index", "Products")</li>
+                                        <li>@Html.ActionLink("Recipes", "Index", "Recipes")</li>
+                                        <li>
+                                            <a href="#">Registration <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li>@Html.Partial("_LoginPartial")</li>
+                                            </ul>
+                                        </li>
+                                    }
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header-end -->

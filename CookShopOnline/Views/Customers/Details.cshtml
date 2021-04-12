@@ -1,0 +1,111 @@
+﻿@model CookShopOnline.ViewModels.SingleCustomerAddressTelephoneViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="slider_area">
+    <div class="bradcam_area latest_trand_area">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-8 ">
+                    <div class="slider_text text-center">
+                        <div class="text">
+                            <h3>My Profile</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /bradcam_area  -->
+
+<body>
+    <div id="customerContainer" class="container">
+        <h2 class="col-12" style="padding-top:10px;">My Profile</h2>
+
+        <div id="customerRows" class="row">
+            <div id="customerInfo1" class="col-6">
+                <p>@Html.DisplayNameFor(model => model.Customer.FirstName):</p>
+                <p>@Html.DisplayNameFor(model => model.Customer.LastName):</p>
+                <p>@Html.DisplayNameFor(model => model.Customer.DateOfBirth):</p>
+            </div>
+            <div id="customerInfo2" class="col-6">
+                <p>@Html.DisplayFor(model => model.Customer.FirstName)</p>
+                <p>@Html.DisplayFor(model => model.Customer.LastName)</p>
+                <p>@Html.DisplayFor(model => model.Customer.CustomerBirthday)</p>
+            </div>
+        </div>
+
+        <a class="line_btn" href="/Customers/Edit/@Html.DisplayFor(model => model.Customer.ID)">Edit basic information</a>
+
+        <h2 class="col-12 ">Contact Information</h2>
+        <div class="row" style="padding:30px;">
+            <div id="customerInfo1" class="col-6">
+                <p>@Html.DisplayNameFor(model => model.Address):</p>
+                <br />
+                <p>Phone Numbers:</p>
+            </div>
+            <div id="customerInfo2" class="col-6">
+                <p>
+                    @Html.DisplayFor(model => model.Address.AddressInformation),
+                    @Html.DisplayFor(model => model.Address.Details)
+                </p>
+                <p>
+                    Mobile: @Html.DisplayFor(model => model.TelephoneNumber.Mobile)
+                    <br />
+                    Telephone 1: @Html.DisplayFor(model => model.TelephoneNumber.Telephone1)
+                    <br />
+                    Telephone 2: @Html.DisplayFor(model => model.TelephoneNumber.Telephone2)
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="line_btn">@Html.ActionLink("All Orders", "AllOrdersPerCustomer", "Orders")</p>
+            </div>
+        </div>
+
+        @if (Model.Customer.SubscriptionState)
+        {
+            <h2 class="col-12 ">Subscription Information</h2>
+            <div class="row" style="padding:30px;">
+                <div id="customerInfo1" class="col-6">
+                    <p>Subscription Status:</p>
+                    <p>Subscription Started at:</p>
+                    <p>Subscription Ends at:</p>
+                </div>
+                <div id="customerInfo2" class="col-6">
+                    <p>Active</p>
+                    <p>@Html.DisplayFor(model => model.Customer.SubscriptionStart)</p>
+                    <p>@Html.DisplayFor(model => model.Customer.SubscriptionEnd)</p>
+                </div>
+            </div>
+        }
+        <hr />
+        <div class="row">
+            <div class="col-12 ">
+                <a class="line_btn" href="/Customers/Edit/@Html.DisplayFor(model => model.Customer.ID)">Edit your information</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 ">
+                <p class="line_btn">
+                    @if (Model.Customer.SubscriptionState)
+                    {
+                        @Html.ActionLink("Renew my subscription", "AddToCart", "ShoppingCart", new { id = 46, count = 1 }, "")
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Become a Premium User today!", "AddToCart", "ShoppingCart", new { id = 46, count = 1 }, "")
+                    }
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</body>

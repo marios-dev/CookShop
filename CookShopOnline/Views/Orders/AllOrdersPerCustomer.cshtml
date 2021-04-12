@@ -1,0 +1,54 @@
+﻿@model CookShopOnline.ViewModels.CustomerOrderDetailViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="slider_area">
+    <div class="bradcam_area latest_trand_area">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-8 ">
+                    <div class="slider_text text-center">
+                        <div class="text">
+                            <h3>My Orders</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+    <div id="customerContainer" class="container">
+        <div class="row">
+            <div class="col-12">
+                @if (Model.AllOrdersPerCustomer.Count() == 0)
+                {
+                    <h4>You have made no orders</h4>
+                }
+                else
+                {
+                    foreach (var order in Model.AllOrdersPerCustomer)
+                    {
+                        if (order.IsPaid)
+                        {
+                            <br /><strong>Order Date : </strong>@order.OrderDate<br />
+                            <strong>Order Total Cost : </strong>@order.Total<br />
+
+                            <br /><strong>Order Details : </strong><br />
+                            foreach (var orderDetail in order.OrderDetails)
+                            {
+                                <br /><strong>Product : </strong>@orderDetail.Product.ProductName
+                                <br /><strong>Product Quanity : </strong>@orderDetail.Quantity
+                                <br /><strong>Price per product : </strong>@orderDetail.UnitPrice<br />
+                            }
+                            <hr />
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</body>

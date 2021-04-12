@@ -1,0 +1,107 @@
+﻿@model PagedList.IPagedList<CookShopOnline.Models.Product>
+@using PagedList.Mvc
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+@*@{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }*@
+
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text text-center">
+                    <h3>Our Products</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /bradcam_area  -->
+
+<div class="customer-area">
+    <table class="table">
+        <tr>
+            <th>
+                @using (Html.BeginForm("Index", "Products", FormMethod.Get))
+                {
+                    <p>
+                        Find: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+                        <input type="submit" value="Search" />
+                    </p>
+                }
+            </th>
+            <th class="line_btn">
+                @Html.ActionLink("Create New Product", "Create")
+            </th>
+        </tr>
+    </table>
+
+    <table class="table">
+        <tr class="text-center">
+            <th>
+                @Html.ActionLink("Products", "Index",
+                new { sortOrder = ViewBag.ProductNameSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("Description", "Index",
+                new { sortOrder = ViewBag.DescriptionSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                Image Path
+            </th>
+            <th>
+                @Html.ActionLink("Price", "Index",
+                new { sortOrder = ViewBag.PriceSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            if (item.ID != 46)
+            {
+                <tr class="text-center">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        <a href="/Content/img/recepie/recpie_4.png"></a>
+                        @Html.DisplayFor(modelItem => item.ImagePath)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        <input type="number" name="quantity" value="1" />
+                    </td>
+                    <td>
+                        <p class="button">
+                            @Html.ActionLink("Add to cart", "AddToCart",
+                         "ShoppingCart", new { id = item.ID }, "")
+                        </p>
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-9" style="padding-left:25%; margin-top:10px;">
+            <p>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+            </p>
+        </div>
+    </div>
+</div>

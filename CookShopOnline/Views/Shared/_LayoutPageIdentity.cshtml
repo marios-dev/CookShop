@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body id="login_body">
+
+    @Html.Partial("_HeaderPartial")
+
+
+    <div id="ourLogin">
+        <div id="IdentityForm">
+            @RenderBody()
+        </div>
+    </div>
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

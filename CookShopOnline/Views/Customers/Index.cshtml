@@ -1,0 +1,153 @@
+﻿@model PagedList.IPagedList<CookShopOnline.Models.Customer>
+@using PagedList.Mvc
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+@{
+    //ViewBag.Title = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="slider_area">
+    <div class="bradcam_area latest_trand_area">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-8 ">
+                    <div class="slider_text text-center">
+                        <div class="text">
+                            <h3 style="color:black" ;>Customers</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="customer-area">
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                @using (Html.BeginForm("Index", "Customers", FormMethod.Get))
+                {
+                <input class="line_btn" type="submit" value="Search" />@Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+                }
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <table class="table">
+        <tr class="text-center">
+            <th>
+                @Html.ActionLink("Surname", "Index",
+                new { sortOrder = ViewBag.LastNameSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("Name", "Index",
+                new { sortOrder = ViewBag.FirstNameSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("Birthday", "Index",
+                new { sortOrder = ViewBag.DateOfBirthSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("Subscription active from", "Index",
+                new { sortOrder = ViewBag.SubscriptionStartSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("Subscription active until", "Index",
+                new { sortOrder = ViewBag.SubscriptionEndSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                Mobile
+            </th>
+            <th>
+                Telephone 1
+            </th>
+            <th>
+                Telephone 2
+            </th>
+            <th>
+                @Html.ActionLink("Street", "Index",
+                new { sortOrder = ViewBag.SubscriptionEndSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                Postal Code
+            </th>
+            <th>
+                Address Details
+            </th>
+            <th>
+                @Html.ActionLink("Country Code", "Index",
+                new { sortOrder = ViewBag.SubscriptionEndSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>
+                @Html.ActionLink("Region", "Index",
+                new { sortOrder = ViewBag.SubscriptionEndSortParm, currentFilter = ViewBag.CurrentFilter })
+            </th>
+            <th>Actions</th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr class="text-center">
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfBirth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SubscriptionStart)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SubscriptionEnd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TelephoneNumber.Mobile)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TelephoneNumber.Telephone1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TelephoneNumber.Telephone2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address.Street)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address.PostalCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address.Details)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address.Country.CountryName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address.Region.RegionName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <br />
+
+</div>
+<hr />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+        </div>
+    </div>
+</div>

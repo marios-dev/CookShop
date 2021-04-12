@@ -1,0 +1,143 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- slider_area_start -->
+<div class="slider_area">
+    <div class="single_slider  d-flex align-items-center slider_bg_1">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-12 ">
+                    <div class="slider_text text-center">
+                        <div class="text">
+                            <h3>
+                                Welcome To Cook Shop
+                            </h3>
+                            <h3>
+                                Recipes And More
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- recipe_area_start  -->
+<div class="recipe_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single_recipe text-center">
+                    <div class="recipe_thumb">
+                        <img src=@Url.Content("~/Content/img/recipe/ourRecipes/air-fryer-chicken-nuggets.jpg") alt="">
+                    </div>
+                    <h3>Air Fryer Chicken Nuggets</h3>
+                    <span>Appetizer</span>
+                    <p style="margin:0px;">Active Time: 5 Mins</p>
+                    <p style="margin:0px;">Total Time: 23 Mins</p>
+                    <a href="Recipes/Details/1" class="line_btn">View Full Recipe</a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single_recipe text-center">
+                    <div class="recipe_thumb">
+                        <img src=@Url.Content("~/Content/img/recipe/ourRecipes/pulled-pork-sandwich.jpg") alt="">
+                    </div>
+                    <h3>Pulled Pork sandwich</h3>
+                    <span>Breakfast</span>
+                    <p style="margin:0px;">Active Time: 5 Mins</p>
+                    <p style="margin:0px;">Total Time: 360 Mins</p>
+                    <a href="Recipes/Details/5" class="line_btn">View Full Recipe</a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="single_recipe text-center">
+                    <div class="recipe_thumb">
+                        <img src=@Url.Content("~/Content/img/recipe/ourRecipes/mozzarella-chicken.jpg") alt="">
+                    </div>
+                    <h3>Chicken Mozzarella</h3>
+                    <span>Main Meal</span>
+                    <p style="margin:0px;">Active Time: 15 Mins</p>
+                    <p style="margin:0px;">Total Time: 50 Mins</p>
+                    <a href="Recipes/Details/11" class="line_btn">View Full Recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /recipe_area_start  -->
+<!-- recipe_videos   -->
+<div class="recipe_videoes_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="recipe_info">
+                    <h3>
+                        Recipe videos
+                        that never misses
+                        any portion
+                    </h3>
+                    <p>
+                        Food can either be a nutritious meal or a guilty pleasure! We all have our weaknesses when it comes to what we like to eat.
+                        Some of those foods, whether they’re healthy or not, have interesting facts about them that you never would have guessed or thought of.
+                    </p>
+                    <div class="video_watch d-flex align-items-center">
+                        <a class="popup-video" href="https://www.youtube.com/watch?v=JzJsUW4xV7k"> <i class="ti-control-play"></i> </a>
+                        <div class="watch_text">
+                            <h4>Watch Video</h4>
+                            <p>A taste of our recipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="videos_thumb">
+                    <div class="big_img">
+                        <img src=@Url.Content("~/Content/img/video/big.png") alt="">
+                    </div>
+                    <div class="small_thumb">
+                        <img src=@Url.Content("~/Content/img/video/small_1.png") alt="">
+                    </div>
+                    <div class="small_thumb_2">
+                        <img src=@Url.Content("~/Content/img/video/2.png") alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ recipe_videos   -->
+<!-- dish_area start  -->
+<div class="dish_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="dish_wrap d-flex">
+                    <div class="single_dish text-center">
+                        <div class="thumb">
+                            <img src=@Url.Content("~/Content/img/recipe/recipe_4.png") alt="">
+                        </div>
+                        <h3>Guilty Pleasure</h3>
+                        <p>Not much in this world can make you smile like this one</p>
+                    </div>
+                    <div class="single_dish text-center">
+                        <div class="thumb">
+                            <img src=@Url.Content("~/Content/img/recipe/recipe_5.png") alt="">
+                        </div>
+                        <h3>Monday Morning</h3>
+                        <p>Nothing better than this to get your day started</p>
+                    </div>
+                    <div class="single_dish text-center">
+                        <div class="thumb">
+                            <img src=@Url.Content("~/Content/img/recipe/recipe_6.png") alt="">
+                        </div>
+                        <h3>Sweet And Sour</h3>
+                        <p>Straight from the other side of the world, a dish invented from heroes, for heroes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ dish_area start  -->

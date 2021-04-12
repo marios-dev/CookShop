@@ -1,0 +1,78 @@
+﻿@model PagedList.IPagedList<CookShopOnline.Models.Recipe>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="slider_area">
+    <div class="bradcam_area latest_trand_area">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-8 ">
+                    <div class="slider_text text-center">
+                        <div class="text">
+                            <h3 style="color:black" ;>Recipes</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row" style="margin:20px;">
+        @*inline*@
+        <div class="col-12" style="align-items:center;">
+
+            @using (Html.BeginForm("Index", "Recipes", FormMethod.Get))
+            {
+                <h4>
+                    Recipe Name: @Html.TextBox("SearchString")
+                    Difficulty :@Html.DropDownList("ResipeDifficulty", "All")
+                    Category: @Html.DropDownList("ResipeCategory", "All")
+                    <input class="line_btn" style="padding:5px 10px; cursor:pointer;" type="submit" value="Search" />
+                </h4>
+            }
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-6 offset-4">
+            <a href="Recipes/Index" class="line_btn" style="padding:5px 10px;">Clear Sorting and Filtering</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div id="recipeCard" class="col-4">
+                <div class="single_recipe text-center">
+                    <div class="recipe_thumb">
+                        <img class="img-fluid" src="@Url.Content(item.ImageUrl)" alt="recipe-image" />
+                    </div>
+                    <h3>@Html.DisplayFor(modelItem => item.RecipeName)</h3>
+                    <span>@Html.DisplayFor(modelItem => item.RecipeCategory.Descreption)</span>
+                    <p><span>Active Time :</span> @Html.DisplayFor(modelItem => item.ActiveTime)</p>
+                    <p><span>Total Time :</span> @Html.DisplayFor(modelItem => item.TotalTime)</p>
+                    <p><span>Difficulty Level :</span> @Html.DisplayFor(modelItem => item.DifficultyLevel)</p>
+                    <a href="Recipes/Details/@Html.DisplayFor(modelItem => item.ID)" class="line_btn">View Full Recipe</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-9" style="padding-left:25%; margin-top:10px;">
+            <p>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+            </p>
+        </div>
+    </div>
+</div>

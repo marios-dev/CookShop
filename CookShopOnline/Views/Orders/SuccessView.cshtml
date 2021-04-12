@@ -1,0 +1,95 @@
+﻿@model CookShopOnline.ViewModels.CustomerOrderDetailViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="slider_area">
+    <div class="bradcam_area latest_trand_area">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-8 ">
+                    <div class="slider_text text-center">
+                        <div class="text">
+                            <h3>Order</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+    <div id="customerContainer" class="container">
+        <h2 class="col-12 ">Your Information</h2>
+        <div id="customerRows" class="row">
+            <div id="customerInfo1" class="col-6">
+                <p>@Html.DisplayNameFor(model => model.Customer.FirstName):</p>
+                <p>@Html.DisplayNameFor(model => model.Customer.LastName):</p>
+            </div>
+            <div id="customerInfo2" class="col-6">
+                <p>@Html.DisplayFor(model => model.Customer.FirstName)</p>
+                <p>@Html.DisplayFor(model => model.Customer.LastName)</p>
+            </div>
+        </div>
+        <div id="customerRows" class="row">
+            <h2 class="col-12 ">Order Information</h2>
+        </div>
+        <div class="row" style="padding:30px;">
+            <div id="customerInfo1" class="col-6">
+                <p>Your Order Date:</p>
+                <p>Total Cost:</p>
+            </div>
+            <div id="customerInfo2" class="col-6">
+                <p>
+                    @Html.DisplayFor(model => model.LastOrderPerCustomer.OrderDate)
+                </p>
+                <p>
+                    @{
+                        var a = Model.LastOrderPerCustomer.Total;
+                        var b = a * 1.13M;
+
+                    }
+                    @string.Format("{0:C2}", @b)
+                </p>
+            </div>
+        </div>
+        <hr />
+        <div id="customerRows" class="row">
+            <h2 class="col-12 ">Order Details</h2>
+        </div>
+        <div class="row" style="padding:30px;">
+            @foreach (var orderDetail in Model.LastOrderDetailsPerCustomer)
+            {
+                <div id="customerInfo1" class="col-6">
+                    <p>Product : </p>
+                    <p>Product Quanity : </p>
+                    <p>Price per product : </p>
+                </div>
+                <div id="customerInfo2" class="col-6">
+                    <p>
+                        @orderDetail.Product.ProductName
+                    </p>
+                    <p>
+                        @orderDetail.Quantity
+                    </p>
+                    <p>
+                        @{
+                            var a1 = orderDetail.UnitPrice;
+                            var b1 = a1 * 1.13M;
+
+                        }
+                        @string.Format("{0:C2}", @b1)
+                    </p>
+                </div>
+            }
+            <hr />
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="line_btn"> @Html.ActionLink("Return to Home Page", "Index", "Home")</div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,59 @@
+/*
+ * DOM element rendering detection
+ * https://davidwalsh.name/detect-node-insertion
+ */
+@keyframes chartjs-render-animation {
+	from { opacity: 0.99; }
+	to { opacity: 1; }
+}
+
+.chartjs-render-monitor {
+	animation: chartjs-render-animation 0.001s;
+}
+
+/*
+ * DOM element resizing detection
+ * https://github.com/marcj/css-element-queries
+ */
+.chartjs-size-monitor,
+.chartjs-size-monitor-expand,
+.chartjs-size-monitor-shrink {
+	direction: ltr;
+	left: 15%;
+	top: 10%;
+	right: 15%;
+	bottom: 10%;
+	overflow: hidden;
+	pointer-events: none;
+	visibility: hidden;
+	z-index: -1;
+}
+
+.chartjs-size-monitor-expand > div {
+	width: 1000000px;
+	height: 1000000px;
+	left: 5%;
+	top: 5%;
+}
+
+.chartjs-size-monitor-shrink > div {
+	width: 500px;
+	height: 600px;
+	left: 5%;
+	top: 5%;
+}
+#bar_chart_region {
+	height: 100%;
+	width: 100%;
+	padding:30px 0px;
+}
+#bar_chart_city {
+	height: 100%;
+	width: 100%;
+	padding: 30px 0px;
+}
+#bar_chart_product_sales {
+	height: 100%;
+	width: 100%;
+	padding: 30px 0px;
+}
