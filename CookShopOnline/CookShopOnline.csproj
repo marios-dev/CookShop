@@ -203,6 +203,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104161056476_Initial.cs" />
+    <Compile Include="Migrations\202104161056476_Initial.Designer.cs">
+      <DependentUpon>202104161056476_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104161333597_Orders.cs" />
+    <Compile Include="Migrations\202104161333597_Orders.Designer.cs">
+      <DependentUpon>202104161333597_Orders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -873,6 +881,14 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202104161056476_Initial.resx">
+      <DependentUpon>202104161056476_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104161333597_Orders.resx">
+      <DependentUpon>202104161333597_Orders.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

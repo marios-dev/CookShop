@@ -1007,55 +1007,55 @@
 
             List<Order> orders = new List<Order>
             {
-                new Order{IsPaid = true, OrderID=1, UserName="a.klopas@gmail.com", Total=10m, OrderDate = DateTime.Parse("2019-12-08")},
+                new Order{IsPaid = true, OrderID=1, UserName="k.tsomisi@gmail.com", Total=10m, OrderDate = DateTime.Parse("2019-12-08")},
                 new Order{IsPaid = true, OrderID=2, UserName="a.klopas@gmail.com", Total=5m, OrderDate = DateTime.Parse("2020-10-01")},
-                new Order{IsPaid = true, OrderID=3, UserName="a.klopas@gmail.com", Total=6m, OrderDate = DateTime.Parse("2019-08-01")},
-                new Order{IsPaid = true, OrderID=4, UserName="a.klopas@gmail.com", Total=100m, OrderDate = DateTime.Parse("2020-01-27")},
+                new Order{IsPaid = true, OrderID=3, UserName="s.polatsidis@gmail.com", Total=6m, OrderDate = DateTime.Parse("2019-08-01")},
+                new Order{IsPaid = true, OrderID=4, UserName="k.tsomisi@gmail.com", Total=100m, OrderDate = DateTime.Parse("2020-01-27")},
                 new Order{IsPaid = true, OrderID=5, UserName="a.klopas@gmail.com", Total=25m, OrderDate = DateTime.Parse("2019-07-09")},
-                new Order{IsPaid = true, OrderID=6, UserName="a.klopas@gmail.com", Total=5.4m, OrderDate = DateTime.Parse("2020-03-08")},
-                new Order{IsPaid = true, OrderID=7, UserName="a.klopas@gmail.com", Total=4.8m, OrderDate = DateTime.Parse("2019-11-03")},
-                new Order{IsPaid = true, OrderID=8, UserName="a.klopas@gmail.com", Total=31m, OrderDate = DateTime.Parse("2020-08-17")},
+                new Order{IsPaid = true, OrderID=6, UserName="p.stergianos@gmail.com", Total=5.4m, OrderDate = DateTime.Parse("2020-03-08")},
+                new Order{IsPaid = true, OrderID=7, UserName="k.tsomisi@gmail.com", Total=4.8m, OrderDate = DateTime.Parse("2019-11-03")},
+                new Order{IsPaid = true, OrderID=8, UserName="s.polatsidis@gmail.com", Total=31m, OrderDate = DateTime.Parse("2020-08-17")},
                 new Order{IsPaid = true, OrderID=9, UserName="a.klopas@gmail.com", Total=2.4m, OrderDate = DateTime.Parse("2019-06-10")},
-                new Order{IsPaid = true, OrderID=10, UserName="a.klopas@gmail.com", Total=3m, OrderDate = DateTime.Parse("2020-12-01")},
+                new Order{IsPaid = true, OrderID=10, UserName="k.tsomisi@gmail.com", Total=3m, OrderDate = DateTime.Parse("2020-12-01")},
                 new Order{IsPaid = true, OrderID=11, UserName="a.klopas@gmail.com", Total=1.4m, OrderDate = DateTime.Parse("2019-02-11")},
-                new Order{IsPaid = true, OrderID=12, UserName="a.klopas@gmail.com", Total=12.5m, OrderDate = DateTime.Parse("2020-05-30")},
-                new Order{IsPaid = true, OrderID=13, UserName="a.klopas@gmail.com", Total=105m, OrderDate = DateTime.Parse("2019-09-01")},
+                new Order{IsPaid = true, OrderID=12, UserName="p.stergianos@gmail.com", Total=12.5m, OrderDate = DateTime.Parse("2020-05-30")},
+                new Order{IsPaid = true, OrderID=13, UserName="k.tsomisi@gmail.com", Total=105m, OrderDate = DateTime.Parse("2019-09-01")},
                 new Order{IsPaid = true, OrderID=14, UserName="a.klopas@gmail.com", Total=34.3m, OrderDate = DateTime.Parse("2020-10-18")},
-                new Order{IsPaid = true, OrderID=15, UserName="a.klopas@gmail.com", Total=2.2m, OrderDate = DateTime.Parse("2019-01-07")},
-                new Order{IsPaid = true, OrderID=16, UserName="a.klopas@gmail.com", Total=2.7m, OrderDate = DateTime.Parse("2020-12-09")},
-                new Order{IsPaid = true, OrderID=17, UserName="a.klopas@gmail.com", Total=1.85m, OrderDate = DateTime.Parse("2019-04-16")},
+                new Order{IsPaid = true, OrderID=15, UserName="m.syti@gmail.com", Total=2.2m, OrderDate = DateTime.Parse("2019-01-07")},
+                new Order{IsPaid = true, OrderID=16, UserName="k.tsomisi@gmail.com", Total=2.7m, OrderDate = DateTime.Parse("2020-12-09")},
+                new Order{IsPaid = true, OrderID=17, UserName="p.stergianos@gmail.com", Total=1.85m, OrderDate = DateTime.Parse("2019-04-16")},
                 new Order{IsPaid = true, OrderID=18, UserName="a.klopas@gmail.com", Total=1.5m, OrderDate = DateTime.Parse("2020-11-01")},
-                new Order{IsPaid = true, OrderID=19, UserName="a.klopas@gmail.com", Total=8.4m, OrderDate = DateTime.Parse("2019-01-22")},
-                new Order{IsPaid = true, OrderID=20, UserName="a.klopas@gmail.com", Total=12m, OrderDate = DateTime.Parse("2020-09-21")},
+                new Order{IsPaid = true, OrderID=19, UserName="k.tsomisi@gmail.com", Total=8.4m, OrderDate = DateTime.Parse("2019-01-22")},
+                new Order{IsPaid = true, OrderID=20, UserName="s.polatsidis@gmail.com", Total=12m, OrderDate = DateTime.Parse("2020-09-21")},
                 new Order{IsPaid = true, OrderID=21, UserName="a.klopas@gmail.com", Total=10m, OrderDate = DateTime.Parse("2019-07-10")},
-                new Order{IsPaid = true, OrderID=22, UserName="a.klopas@gmail.com", Total=14m, OrderDate = DateTime.Parse("2020-09-14")},
-                new Order{IsPaid = true, OrderID=23, UserName="a.klopas@gmail.com", Total=250m, OrderDate = DateTime.Parse("2019-06-17")},
+                new Order{IsPaid = true, OrderID=22, UserName="k.tsomisi@gmail.com", Total=14m, OrderDate = DateTime.Parse("2020-09-14")},
+                new Order{IsPaid = true, OrderID=23, UserName="m.syti@gmail.com", Total=250m, OrderDate = DateTime.Parse("2019-06-17")},
                 new Order{IsPaid = true, OrderID=24, UserName="a.klopas@gmail.com", Total=10m, OrderDate = DateTime.Parse("2020-01-06")},
-                new Order{IsPaid = true, OrderID=25, UserName="a.klopas@gmail.com", Total=23.8m, OrderDate = DateTime.Parse("2019-05-11")},
+                new Order{IsPaid = true, OrderID=25, UserName="k.tsomisi@gmail.com", Total=23.8m, OrderDate = DateTime.Parse("2019-05-11")},
                 new Order{IsPaid = true, OrderID=26, UserName="a.klopas@gmail.com", Total=2m, OrderDate = DateTime.Parse("2020-08-05")},
                 new Order{IsPaid = true, OrderID=27, UserName="a.klopas@gmail.com", Total=8m, OrderDate = DateTime.Parse("2019-11-07")},
-                new Order{IsPaid = true, OrderID=28, UserName="a.klopas@gmail.com", Total=16.2m, OrderDate = DateTime.Parse("2020-09-10")},
+                new Order{IsPaid = true, OrderID=28, UserName="k.tsomisi@gmail.com", Total=16.2m, OrderDate = DateTime.Parse("2020-09-10")},
                 new Order{IsPaid = true, OrderID=29, UserName="a.klopas@gmail.com", Total=6m, OrderDate = DateTime.Parse("2019-07-01")},
-                new Order{IsPaid = true, OrderID=30, UserName="a.klopas@gmail.com", Total=4m, OrderDate = DateTime.Parse("2020-09-22")},
-                new Order{IsPaid = true, OrderID=31, UserName="a.klopas@gmail.com", Total=12m, OrderDate = DateTime.Parse("2019-12-08")},
+                new Order{IsPaid = true, OrderID=30, UserName="m.syti@gmail.com", Total=4m, OrderDate = DateTime.Parse("2020-09-22")},
+                new Order{IsPaid = true, OrderID=31, UserName="k.tsomisi@gmail.com", Total=12m, OrderDate = DateTime.Parse("2019-12-08")},
                 new Order{IsPaid = true, OrderID=32, UserName="a.klopas@gmail.com", Total=16m, OrderDate = DateTime.Parse("2020-10-01")},
                 new Order{IsPaid = true, OrderID=33, UserName="a.klopas@gmail.com", Total=28m, OrderDate = DateTime.Parse("2020-12-10")},
-                new Order{IsPaid = true, OrderID=34, UserName="a.klopas@gmail.com", Total=62.1m, OrderDate = DateTime.Parse("2020-01-27")},
+                new Order{IsPaid = true, OrderID=34, UserName="k.tsomisi@gmail.com", Total=62.1m, OrderDate = DateTime.Parse("2020-01-27")},
                 new Order{IsPaid = true, OrderID=35, UserName="a.klopas@gmail.com", Total=1.8m, OrderDate = DateTime.Parse("2019-07-09")},
-                new Order{IsPaid = true, OrderID=36, UserName="a.klopas@gmail.com", Total=50m, OrderDate = DateTime.Parse("2020-07-18")},
-                new Order{IsPaid = true, OrderID=37, UserName="a.klopas@gmail.com", Total=6.3m, OrderDate = DateTime.Parse("2019-11-03")},
+                new Order{IsPaid = true, OrderID=36, UserName="k.tsomisi@gmail.com", Total=50m, OrderDate = DateTime.Parse("2020-07-18")},
+                new Order{IsPaid = true, OrderID=37, UserName="m.syti@gmail.com", Total=6.3m, OrderDate = DateTime.Parse("2019-11-03")},
                 new Order{IsPaid = true, OrderID=38, UserName="a.klopas@gmail.com", Total=9.1m, OrderDate = DateTime.Parse("2020-10-23")},
-                new Order{IsPaid = true, OrderID=39, UserName="a.klopas@gmail.com", Total=4.2m, OrderDate = DateTime.Parse("2020-09-19")},
+                new Order{IsPaid = true, OrderID=39, UserName="k.tsomisi@gmail.com", Total=4.2m, OrderDate = DateTime.Parse("2020-09-19")},
                 new Order{IsPaid = true, OrderID=40, UserName="a.klopas@gmail.com", Total=24m, OrderDate = DateTime.Parse("2020-12-01")},
                 new Order{IsPaid = true, OrderID=41, UserName="a.klopas@gmail.com", Total=8m, OrderDate = DateTime.Parse("2019-12-08")},
-                new Order{IsPaid = true, OrderID=42, UserName="a.klopas@gmail.com", Total=9.6m, OrderDate = DateTime.Parse("2020-07-21")},
+                new Order{IsPaid = true, OrderID=42, UserName="k.tsomisi@gmail.com", Total=9.6m, OrderDate = DateTime.Parse("2020-07-21")},
                 new Order{IsPaid = true, OrderID=43, UserName="a.klopas@gmail.com", Total=22.4m, OrderDate = DateTime.Parse("2019-08-01")},
-                new Order{IsPaid = true, OrderID=44, UserName="a.klopas@gmail.com", Total=21m, OrderDate = DateTime.Parse("2020-01-27")},
-                new Order{IsPaid = true, OrderID=45, UserName="a.klopas@gmail.com", Total=3m, OrderDate = DateTime.Parse("2020-07-28")},
-                new Order{IsPaid = true, OrderID=46, UserName="a.klopas@gmail.com", Total=7.2m, OrderDate = DateTime.Parse("2020-03-08")},
+                new Order{IsPaid = true, OrderID=44, UserName="s.polatsidis@gmail.com", Total=21m, OrderDate = DateTime.Parse("2020-01-27")},
+                new Order{IsPaid = true, OrderID=45, UserName="k.tsomisi@gmail.com", Total=3m, OrderDate = DateTime.Parse("2020-07-28")},
+                new Order{IsPaid = true, OrderID=46, UserName="m.syti@gmail.com", Total=7.2m, OrderDate = DateTime.Parse("2020-03-08")},
                 new Order{IsPaid = true, OrderID=47, UserName="a.klopas@gmail.com", Total=13.3m, OrderDate = DateTime.Parse("2019-11-03")},
-                new Order{IsPaid = true, OrderID=48, UserName="a.klopas@gmail.com", Total=5m, OrderDate = DateTime.Parse("2020-08-17")},
-                new Order{IsPaid = true, OrderID=49, UserName="a.klopas@gmail.com", Total=14.5m, OrderDate = DateTime.Parse("2020-11-14")},
+                new Order{IsPaid = true, OrderID=48, UserName="k.tsomisi@gmail.com", Total=5m, OrderDate = DateTime.Parse("2020-08-17")},
+                new Order{IsPaid = true, OrderID=49, UserName="m.syti@gmail.com", Total=14.5m, OrderDate = DateTime.Parse("2020-11-14")},
                 new Order{IsPaid = true, OrderID=50, UserName="a.klopas@gmail.com", Total=20m, OrderDate = DateTime.Parse("2020-06-02")}
             };
             orders.ForEach(o => context.Orders.AddOrUpdate(o));
@@ -1063,56 +1063,173 @@
 
             List<OrderDetail> orderDetails = new List<OrderDetail>
             {
+                //1o Order
                 new OrderDetail{OrderDetailID=1, OrderID=1, ProductID=2, Quantity =1, UnitPrice =10m},
-                new OrderDetail{OrderDetailID=2, OrderID=2, ProductID=4, Quantity=5, UnitPrice =1m},
-                new OrderDetail{OrderDetailID=3, OrderID=3, ProductID=6, Quantity=6, UnitPrice =1m},
-                new OrderDetail{OrderDetailID=4, OrderID=4, ProductID=8, Quantity=10, UnitPrice =10m},
-                new OrderDetail{OrderDetailID=5, OrderID=5, ProductID=10, Quantity=5, UnitPrice =5m},
-                new OrderDetail{OrderDetailID=6, OrderID=6, ProductID=12, Quantity=6, UnitPrice =0.9m},
-                new OrderDetail{OrderDetailID=7, OrderID=7, ProductID=14, Quantity=2, UnitPrice =2.4m},
-                new OrderDetail{OrderDetailID=8, OrderID=8, ProductID=16, Quantity=10, UnitPrice =3.1m},
-                new OrderDetail{OrderDetailID=9, OrderID=9, ProductID=18, Quantity=3, UnitPrice =0.8m},
-                new OrderDetail{OrderDetailID=10, OrderID=10, ProductID=20, Quantity=3, UnitPrice =1m},
-                new OrderDetail{OrderDetailID=11, OrderID=11, ProductID=22, Quantity =1, UnitPrice =1.4m},
-                new OrderDetail{OrderDetailID=12, OrderID=12, ProductID=24, Quantity =5, UnitPrice =2.5m},
-                new OrderDetail{OrderDetailID=13, OrderID=13, ProductID=26, Quantity =7, UnitPrice =15m},
-                new OrderDetail{OrderDetailID=14, OrderID=14, ProductID=28, Quantity =7, UnitPrice =4.9m},
-                new OrderDetail{OrderDetailID=15, OrderID=15, ProductID=30, Quantity =1, UnitPrice =2.2m},
-                new OrderDetail{OrderDetailID=16, OrderID=16, ProductID=32, Quantity =3, UnitPrice =0.9m},
-                new OrderDetail{OrderDetailID=17, OrderID=17, ProductID=34, Quantity =1, UnitPrice =1.85m},
-                new OrderDetail{OrderDetailID=18, OrderID=18, ProductID=36, Quantity =1, UnitPrice =1.5m},
-                new OrderDetail{OrderDetailID=19, OrderID=19, ProductID=38, Quantity =4, UnitPrice =2.1m},
-                new OrderDetail{OrderDetailID=20, OrderID=20, ProductID=40, Quantity =4, UnitPrice =3m},
-                new OrderDetail{OrderDetailID=21, OrderID=21, ProductID=42, Quantity =4, UnitPrice =2.5m},
-                new OrderDetail{OrderDetailID=22, OrderID=22, ProductID=44, Quantity =7, UnitPrice =2m},
-                new OrderDetail{OrderDetailID=23, OrderID=23, ProductID=46, Quantity =10, UnitPrice =25m},
-                new OrderDetail{OrderDetailID=24, OrderID=24, ProductID=48, Quantity =5, UnitPrice =2m},
-                new OrderDetail{OrderDetailID=25, OrderID=25, ProductID=50, Quantity =2, UnitPrice =11.9m},
-                new OrderDetail{OrderDetailID=26, OrderID=26, ProductID=52, Quantity =1, UnitPrice =2m},
-                new OrderDetail{OrderDetailID=27, OrderID=27, ProductID=54, Quantity =8, UnitPrice =1m},
-                new OrderDetail{OrderDetailID=28, OrderID=28, ProductID=56, Quantity =6, UnitPrice =2.7m},
-                new OrderDetail{OrderDetailID=29, OrderID=29, ProductID=3, Quantity =2, UnitPrice =3m},
-                new OrderDetail{OrderDetailID=30, OrderID=30, ProductID=5, Quantity =4, UnitPrice =1m},
-                new OrderDetail{OrderDetailID=31, OrderID=31, ProductID=7, Quantity =4, UnitPrice =3m},
-                new OrderDetail{OrderDetailID=32, OrderID=32, ProductID=9, Quantity =4, UnitPrice =4m},
-                new OrderDetail{OrderDetailID=33, OrderID=33, ProductID=11, Quantity =8, UnitPrice =3.5m},
-                new OrderDetail{OrderDetailID=34, OrderID=34, ProductID=13, Quantity =9, UnitPrice =6.9m},
-                new OrderDetail{OrderDetailID=35, OrderID=35, ProductID=15, Quantity =2, UnitPrice =0.9m},
-                new OrderDetail{OrderDetailID=36, OrderID=36, ProductID=17, Quantity =5, UnitPrice =10m},
-                new OrderDetail{OrderDetailID=37, OrderID=37, ProductID=19, Quantity =9, UnitPrice =0.7m},
-                new OrderDetail{OrderDetailID=38, OrderID=38, ProductID=21, Quantity =7, UnitPrice =1.3m},
-                new OrderDetail{OrderDetailID=39, OrderID=39, ProductID=23, Quantity =3, UnitPrice =1.4m},
-                new OrderDetail{OrderDetailID=40, OrderID=40, ProductID=25, Quantity =6, UnitPrice =4m},
-                new OrderDetail{OrderDetailID=41, OrderID=41, ProductID=27, Quantity =8, UnitPrice =1m},
-                new OrderDetail{OrderDetailID=42, OrderID=42, ProductID=29, Quantity =3, UnitPrice =3.2m},
-                new OrderDetail{OrderDetailID=43, OrderID=43, ProductID=31, Quantity =8, UnitPrice =2.8m},
-                new OrderDetail{OrderDetailID=44, OrderID=44, ProductID=33, Quantity =6, UnitPrice =3.5m},
-                new OrderDetail{OrderDetailID=45, OrderID=45, ProductID=35, Quantity =2, UnitPrice =1.5m},
-                new OrderDetail{OrderDetailID=46, OrderID=46, ProductID=37, Quantity =3, UnitPrice =2.4m},
-                new OrderDetail{OrderDetailID=47, OrderID=47, ProductID=39, Quantity =7, UnitPrice =1.9m},
-                new OrderDetail{OrderDetailID=48, OrderID=48, ProductID=41, Quantity =5, UnitPrice =1m},
-                new OrderDetail{OrderDetailID=49, OrderID=49, ProductID=43, Quantity =3, UnitPrice =1.5m},
-                new OrderDetail{OrderDetailID=50, OrderID=50, ProductID=45, Quantity =8, UnitPrice =2.5m}
+                new OrderDetail{OrderDetailID=2, OrderID=1, ProductID=4, Quantity =4, UnitPrice =10m},
+                new OrderDetail{OrderDetailID=3, OrderID=1, ProductID=3, Quantity =1, UnitPrice =10m},
+                new OrderDetail{OrderDetailID=4, OrderID=1, ProductID=9, Quantity =3, UnitPrice =10m},
+                new OrderDetail{OrderDetailID=5, OrderID=1, ProductID=5, Quantity =2, UnitPrice =10m},
+                //2o order
+                new OrderDetail{OrderDetailID=6, OrderID=2, ProductID=14, Quantity=4, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=7, OrderID=2, ProductID=15, Quantity=1, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=8, OrderID=2, ProductID=16, Quantity=2, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=9, OrderID=2, ProductID=13, Quantity=5, UnitPrice =1m},
+                //3o order
+                new OrderDetail{OrderDetailID=10, OrderID=3, ProductID=44, Quantity=6, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=11, OrderID=3, ProductID=2, Quantity=2, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=12, OrderID=3, ProductID=16, Quantity=4, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=13, OrderID=3, ProductID=19, Quantity=6, UnitPrice =1m},
+                //4o order
+                new OrderDetail{OrderDetailID=14, OrderID=4, ProductID=21, Quantity=10, UnitPrice =10m},
+                new OrderDetail{OrderDetailID=15, OrderID=4, ProductID=24, Quantity=2, UnitPrice =10m},
+                new OrderDetail{OrderDetailID=16, OrderID=4, ProductID=49, Quantity=1, UnitPrice =10m},
+                new OrderDetail{OrderDetailID=17, OrderID=4, ProductID=51, Quantity=1, UnitPrice =10m},
+                //5o order
+                new OrderDetail{OrderDetailID=18, OrderID=5, ProductID=46, Quantity=5, UnitPrice =5m},
+                new OrderDetail{OrderDetailID=19, OrderID=5, ProductID=9, Quantity=5, UnitPrice =5m},
+                new OrderDetail{OrderDetailID=20, OrderID=5, ProductID=2, Quantity=5, UnitPrice =5m},
+                //6o order
+                new OrderDetail{OrderDetailID=21, OrderID=6, ProductID=5, Quantity=6, UnitPrice =0.9m},
+                new OrderDetail{OrderDetailID=22, OrderID=6, ProductID=21, Quantity=6, UnitPrice =0.9m},
+                new OrderDetail{OrderDetailID=23, OrderID=6, ProductID=12, Quantity=5, UnitPrice =0.9m},
+                new OrderDetail{OrderDetailID=24, OrderID=6, ProductID=17, Quantity=6, UnitPrice =0.9m},
+                //7o order
+                new OrderDetail{OrderDetailID=25, OrderID=7, ProductID=21, Quantity=2, UnitPrice =2.4m},
+                new OrderDetail{OrderDetailID=26, OrderID=7, ProductID=18, Quantity=2, UnitPrice =2.4m},
+                new OrderDetail{OrderDetailID=27, OrderID=7, ProductID=31, Quantity=2, UnitPrice =2.4m},
+                //8o order
+                new OrderDetail{OrderDetailID=28, OrderID=8, ProductID=27, Quantity=10, UnitPrice =3.1m},
+                new OrderDetail{OrderDetailID=29, OrderID=8, ProductID=16, Quantity=4, UnitPrice =3.1m},
+                //9o order
+                new OrderDetail{OrderDetailID=30, OrderID=9, ProductID=47, Quantity=3, UnitPrice =0.8m},
+                new OrderDetail{OrderDetailID=31, OrderID=9, ProductID=35, Quantity=3, UnitPrice =0.8m},
+                new OrderDetail{OrderDetailID=32, OrderID=9, ProductID=18, Quantity=3, UnitPrice =0.8m},
+                //10o order
+                new OrderDetail{OrderDetailID=33, OrderID=10, ProductID=25, Quantity=3, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=34, OrderID=10, ProductID=21, Quantity=3, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=35, OrderID=10, ProductID=20, Quantity=3, UnitPrice =1m},
+                //11o order
+                new OrderDetail{OrderDetailID=36, OrderID=11, ProductID=38, Quantity =1, UnitPrice =1.4m},
+                new OrderDetail{OrderDetailID=37, OrderID=11, ProductID=22, Quantity =1, UnitPrice =1.4m},
+                //12o order
+                new OrderDetail{OrderDetailID=38, OrderID=12, ProductID=52, Quantity =5, UnitPrice =2.5m},
+                new OrderDetail{OrderDetailID=39, OrderID=12, ProductID=17, Quantity =5, UnitPrice =2.5m},
+                new OrderDetail{OrderDetailID=40, OrderID=12, ProductID=24, Quantity =5, UnitPrice =2.5m},
+                //13o order
+                new OrderDetail{OrderDetailID=41, OrderID=13, ProductID=26, Quantity =7, UnitPrice =15m},
+                new OrderDetail{OrderDetailID=42, OrderID=13, ProductID=4, Quantity =7, UnitPrice =15m},
+                //14o order
+                new OrderDetail{OrderDetailID=43, OrderID=14, ProductID=8, Quantity =7, UnitPrice =4.9m},
+                new OrderDetail{OrderDetailID=44, OrderID=14, ProductID=28, Quantity =7, UnitPrice =4.9m},
+                //15o order
+                new OrderDetail{OrderDetailID=45, OrderID=15, ProductID=9, Quantity =1, UnitPrice =2.2m},
+                new OrderDetail{OrderDetailID=46, OrderID=15, ProductID=30, Quantity =1, UnitPrice =2.2m},
+                //16o order
+                new OrderDetail{OrderDetailID=47, OrderID=16, ProductID=21, Quantity =3, UnitPrice =0.9m},
+                new OrderDetail{OrderDetailID=48, OrderID=16, ProductID=32, Quantity =3, UnitPrice =0.9m},
+                new OrderDetail{OrderDetailID=49, OrderID=16, ProductID=35, Quantity =3, UnitPrice =0.9m},
+                //17o order
+                new OrderDetail{OrderDetailID=50, OrderID=17, ProductID=21, Quantity =1, UnitPrice =1.85m},
+                new OrderDetail{OrderDetailID=51, OrderID=17, ProductID=34, Quantity =1, UnitPrice =1.85m},
+                //18o order
+                new OrderDetail{OrderDetailID=52, OrderID=18, ProductID=36, Quantity =1, UnitPrice =1.5m},
+                new OrderDetail{OrderDetailID=53, OrderID=18, ProductID=26, Quantity =1, UnitPrice =1.5m},
+                //19o order
+                new OrderDetail{OrderDetailID=54, OrderID=19, ProductID=34, Quantity =4, UnitPrice =2.1m},
+                new OrderDetail{OrderDetailID=55, OrderID=19, ProductID=38, Quantity =4, UnitPrice =2.1m},
+                //20o order
+                new OrderDetail{OrderDetailID=56, OrderID=20, ProductID=41, Quantity =4, UnitPrice =3m},
+                new OrderDetail{OrderDetailID=57, OrderID=20, ProductID=40, Quantity =4, UnitPrice =3m},
+                //21o order
+                new OrderDetail{OrderDetailID=58, OrderID=21, ProductID=42, Quantity =4, UnitPrice =2.5m},
+                new OrderDetail{OrderDetailID=59, OrderID=21, ProductID=24, Quantity =4, UnitPrice =2.5m},
+                //22o order
+                new OrderDetail{OrderDetailID=60, OrderID=22, ProductID=28, Quantity =7, UnitPrice =2m},
+                new OrderDetail{OrderDetailID=61, OrderID=22, ProductID=44, Quantity =7, UnitPrice =2m},
+                //23o order
+                new OrderDetail{OrderDetailID=62, OrderID=23, ProductID=26, Quantity =10, UnitPrice =25m},
+                new OrderDetail{OrderDetailID=63, OrderID=23, ProductID=46, Quantity =10, UnitPrice =25m},
+                //24o order
+                new OrderDetail{OrderDetailID=64, OrderID=24, ProductID=31, Quantity =5, UnitPrice =2m},
+                new OrderDetail{OrderDetailID=65, OrderID=24, ProductID=48, Quantity =5, UnitPrice =2m},
+                //25o order
+                new OrderDetail{OrderDetailID=66, OrderID=25, ProductID=34, Quantity =2, UnitPrice =11.9m},
+                new OrderDetail{OrderDetailID=67, OrderID=25, ProductID=50, Quantity =2, UnitPrice =11.9m},
+                //26o order
+                new OrderDetail{OrderDetailID=68, OrderID=26, ProductID=44, Quantity =1, UnitPrice =2m},
+                new OrderDetail{OrderDetailID=69, OrderID=26, ProductID=52, Quantity =1, UnitPrice =2m},
+                //27o order
+                new OrderDetail{OrderDetailID=70, OrderID=27, ProductID=54, Quantity =8, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=71, OrderID=27, ProductID=41, Quantity =8, UnitPrice =1m},
+                //28o order
+                new OrderDetail{OrderDetailID=72, OrderID=28, ProductID=56, Quantity =8, UnitPrice =2.7m},
+                new OrderDetail{OrderDetailID=73, OrderID=28, ProductID=41, Quantity =2, UnitPrice =2.7m},
+                //29o order
+                new OrderDetail{OrderDetailID=74, OrderID=29, ProductID=18, Quantity =2, UnitPrice =3m},
+                new OrderDetail{OrderDetailID=75, OrderID=29, ProductID=3, Quantity =2, UnitPrice =3m},
+                //30o order
+                new OrderDetail{OrderDetailID=76, OrderID=30, ProductID=11, Quantity =4, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=77, OrderID=30, ProductID=5, Quantity =4, UnitPrice =1m},
+                //31o order
+                new OrderDetail{OrderDetailID=78, OrderID=31, ProductID=15, Quantity =4, UnitPrice =3m},
+                new OrderDetail{OrderDetailID=79, OrderID=31, ProductID=7, Quantity =4, UnitPrice =3m},
+                //32o order
+                new OrderDetail{OrderDetailID=80, OrderID=32, ProductID=19, Quantity =4, UnitPrice =4m},
+                new OrderDetail{OrderDetailID=81, OrderID=32, ProductID=9, Quantity =4, UnitPrice =4m},
+                //33o order
+                new OrderDetail{OrderDetailID=82, OrderID=33, ProductID=15, Quantity =3, UnitPrice =3.5m},
+                new OrderDetail{OrderDetailID=83, OrderID=33, ProductID=11, Quantity =8, UnitPrice =3.5m},
+                //34o order
+                new OrderDetail{OrderDetailID=83, OrderID=34, ProductID=5, Quantity =5, UnitPrice =6.9m},
+                new OrderDetail{OrderDetailID=84, OrderID=34, ProductID=13, Quantity =9, UnitPrice =6.9m},
+                //35o order                   
+                new OrderDetail{OrderDetailID=85, OrderID=35, ProductID=2, Quantity =3, UnitPrice =0.9m},
+                new OrderDetail{OrderDetailID=86, OrderID=35, ProductID=15, Quantity =2, UnitPrice =0.9m},
+                //36o order                   
+                new OrderDetail{OrderDetailID=87, OrderID=36, ProductID=6, Quantity =6, UnitPrice =10m},
+                new OrderDetail{OrderDetailID=88, OrderID=36, ProductID=17, Quantity =5, UnitPrice =10m},
+                //37o order                   
+                new OrderDetail{OrderDetailID=89, OrderID=37, ProductID=7, Quantity =3, UnitPrice =0.7m},
+                new OrderDetail{OrderDetailID=90, OrderID=37, ProductID=19, Quantity =9, UnitPrice =0.7m},
+                //38o order
+                new OrderDetail{OrderDetailID=91, OrderID=38, ProductID=8, Quantity =7, UnitPrice =1.3m},
+                new OrderDetail{OrderDetailID=92, OrderID=38, ProductID=21, Quantity =7, UnitPrice =1.3m},
+                //39o order
+                new OrderDetail{OrderDetailID=93, OrderID=39, ProductID=6, Quantity =3, UnitPrice =1.4m},
+                new OrderDetail{OrderDetailID=94, OrderID=39, ProductID=23, Quantity =3, UnitPrice =1.4m},
+                //40o order
+                new OrderDetail{OrderDetailID=95, OrderID=40, ProductID=3, Quantity =3, UnitPrice =4m},
+                new OrderDetail{OrderDetailID=96, OrderID=40, ProductID=25, Quantity =6, UnitPrice =4m},
+                //41o order
+                new OrderDetail{OrderDetailID=97, OrderID=41, ProductID=2, Quantity =5, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=98, OrderID=41, ProductID=27, Quantity =8, UnitPrice =1m},
+                //42o order
+                new OrderDetail{OrderDetailID=99, OrderID=42, ProductID=4, Quantity =5, UnitPrice =3.2m},
+                new OrderDetail{OrderDetailID=100, OrderID=42, ProductID=29, Quantity =3, UnitPrice =3.2m},
+                //43o order
+                new OrderDetail{OrderDetailID=101, OrderID=43, ProductID=1, Quantity =8, UnitPrice =2.8m},
+                new OrderDetail{OrderDetailID=102, OrderID=43, ProductID=31, Quantity =8, UnitPrice =2.8m},
+                //44o order
+                new OrderDetail{OrderDetailID=103, OrderID=44, ProductID=6, Quantity =3, UnitPrice =3.5m},
+                new OrderDetail{OrderDetailID=104, OrderID=44, ProductID=33, Quantity =6, UnitPrice =3.5m},
+                //45o order
+                new OrderDetail{OrderDetailID=105, OrderID=45, ProductID=7, Quantity =2, UnitPrice =1.5m},
+                new OrderDetail{OrderDetailID=106, OrderID=45, ProductID=35, Quantity =2, UnitPrice =1.5m},
+                //46o order
+                new OrderDetail{OrderDetailID=107, OrderID=46, ProductID=2, Quantity =3, UnitPrice =2.4m},
+                new OrderDetail{OrderDetailID=108, OrderID=46, ProductID=37, Quantity =3, UnitPrice =2.4m},
+                //47o order
+                new OrderDetail{OrderDetailID=109, OrderID=47, ProductID=1, Quantity =7, UnitPrice =1.9m},
+                new OrderDetail{OrderDetailID=110, OrderID=47, ProductID=39, Quantity =7, UnitPrice =1.9m},
+                //48o order
+                new OrderDetail{OrderDetailID=111, OrderID=48, ProductID=4, Quantity =1, UnitPrice =1m},
+                new OrderDetail{OrderDetailID=112, OrderID=48, ProductID=41, Quantity =5, UnitPrice =1m},
+                //49o order
+                new OrderDetail{OrderDetailID=113, OrderID=49, ProductID=7, Quantity =2, UnitPrice =1.5m},
+                new OrderDetail{OrderDetailID=114, OrderID=49, ProductID=43, Quantity =3, UnitPrice =1.5m},
+                //50o order
+                new OrderDetail{OrderDetailID=115, OrderID=50, ProductID=9, Quantity =8, UnitPrice =2.5m},
+                new OrderDetail{OrderDetailID=116, OrderID=50, ProductID=45, Quantity =8, UnitPrice =2.5m}
             };
             orderDetails.ForEach(o => context.OrderDetails.AddOrUpdate(o));
             context.SaveChanges();

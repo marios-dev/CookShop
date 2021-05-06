@@ -46,13 +46,13 @@ namespace CookShopOnline
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
             app.UseFacebookAuthentication(
-               appId: "",
-               appSecret: "");
+               appId: "179582370647529",
+               appSecret: "2da030668d767a33cd3b12b035fd06c1");
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = "",
-                ClientSecret = ""
+                ClientId = "837050164147-s1e09p01hon0cqhk11mq5iindl1vc0oe.apps.googleusercontent.com",
+                ClientSecret = "vYZJw4tfjh18d0trFQBd7wZF"
             });
         }
     }
