@@ -29,15 +29,14 @@
 
             @using (Html.BeginForm("Index", "Recipes", FormMethod.Get))
             {
-                <h4>
-                    Recipe Name: @Html.TextBox("SearchString")
-                    Difficulty :@Html.DropDownList("ResipeDifficulty", "All")
-                    Category: @Html.DropDownList("ResipeCategory", "All")
+                <h4 style="font-size:20px;font-weight:600">
+                    <span>Recipe Name: @Html.TextBox("SearchString")</span>
+                    <span>Difficulty: @Html.DropDownList("ResipeDifficulty", "All")</span>
+                    <span>Category: @Html.DropDownList("ResipeCategory", "All")</span>
                     <input class="line_btn" style="padding:5px 10px; cursor:pointer;" type="submit" value="Search" />
                 </h4>
             }
         </div>
-
     </div>
     <div class="row">
         <div class="col-6 offset-4">
