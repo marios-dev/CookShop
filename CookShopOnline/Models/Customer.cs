@@ -69,7 +69,6 @@ namespace CookShopOnline.Models
             get
             {
                 return User.Email;
-                //return $"{FirstName} {LastName}";
             }
         }
 

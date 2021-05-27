@@ -12,7 +12,5 @@ namespace CookShopOnline.Models
 
         [Display(Name = "City")]
         public string Name { get; set; }
-        //public int RegionID { get; set; }
-        //public Region Region { get; set; }
     }
 }

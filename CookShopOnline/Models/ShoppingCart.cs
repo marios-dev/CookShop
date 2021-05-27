@@ -51,15 +51,6 @@ namespace CookShopOnline.Models
             int itemCount = 0;
             if (cartItem != null)
             {
-                //if (cartItem.Count > 1)
-                //{
-                //    cartItem.Count--;
-                //    itemCount = cartItem.Count;
-                //}
-                //else
-                //{
-                //    db.CartItems.Remove(cartItem);
-                //}
                 db.CartItems.Remove(cartItem);
                 db.SaveChanges();
             }
