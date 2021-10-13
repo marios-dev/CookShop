@@ -41,7 +41,6 @@ namespace CookShopOnline
                 user.Email = "user@gmail.com";
 
                 string userPassword = "User123!";
-
                 var checkUser = userManager.Create(user, userPassword);
 
                 // Assign "Administrator" role to "Admin" user
